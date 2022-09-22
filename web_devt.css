@@ -1,0 +1,289 @@
+/*CSS BASIC SYNTAXES*/
+/*Web Safe Fonts are: ;
+Arial, Arial-black, Courier New, Times New Roman, 
+Geneva, Tahoma, Impact, Georgia, Comic Sans MS,
+Trebuchet MS, Helvetica, Garamond, Verdana, 
+Bookman Old Style, Palatino, Times, Trebuchet MS
+*/
+
+/* *{ Asterix basically means everything*/
+	margin: 0;
+	padding: 0;/*This is known as "RESET"
+}
+*/
+
+
+ body{
+ 	background-color: #f4f4f4; /*sets the backhround color*/
+ 	color: #555555; /*sets the text color*/
+
+/* -----------------FONT---------------*/
+
+ 	font-family: Trebuchet MS; /*This sets the font*/
+ 	font-size: 16px; /*This sets the font-size*/
+ 	font-weight: normal;/*This sets the font-weight*/
+ 	font: normal 18px Times; /*This is same as above and any changes to this over-rides the previous parameters*/
+
+ 	line-height: 1.6em; /*This sets the spaces between lines*/
+
+ 	margin: 0;/*Ths gets rid of spaces*/
+ }
+
+/* Classes can be reused, IDs are unique
+	Padding is the space inside
+	Margin is the space outside
+*/
+
+/* ----------------- LINKS ---------------*/
+
+
+a{
+	text-decoration: none;
+	text-decoration-color: black;
+}
+
+a:hover{ 
+	color: red; /*This turns red when the mouse hovers around it*/
+}
+
+a:active{
+	color: green;
+}
+
+.push-up{
+	margin-top: 1000px;
+}
+
+.container{
+	width: 80%;
+	margin: auto; /*This puts an even amount of margin on each side*/
+
+}
+
+.button{
+	background-color: grey;
+	color: white;
+	padding: 10px;
+	border: none;
+}
+
+
+.button:hover{
+	background-color: burlywood;
+	color: white;
+}
+
+
+.clr{
+	clear: both; /*This is done after floating is executed and it enables any further content to be displayed properly below*/
+}
+
+
+.box-1{
+	background-color: #b4b8b5;
+	color: #fff;
+
+/* -----------------BORDER---------------*/
+
+	border-right: 5px red solid;
+	border-left: 5px red solid;
+	border-top: 5px red solid;
+	border-bottom: 5px red solid;
+	border: 5px red solid; /*Same as above*/
+	border-width: 3px; /*This sets the border width*/
+	border-top-style: dashed;/*This styles the top border either dashed, dotted, doube, groove,etc*/
+
+/* -----------------PADDING---------------*/
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+
+	padding: 20px; /*Same as above*/
+
+/* ----------------- MARGIN ---------------*/
+
+
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	margin: 20px; /*Same as above*/
+
+}
+
+/* This means i want to style all h1 elements in the class "box-1"*/
+
+.box-1 h1{
+	font-family: Tahoma;
+	font-weight: 800;
+	font-style: italic;
+
+/* ----------------- TEXT FORMATTING ---------------*/
+
+	text-decoration: none;
+	text-decoration-color: blue;
+	text-transform: uppercase;
+	letter-spacing: 0.3em; /*This sets space between each letter*/
+	word-spacing: 1em; /*This sets space between each word*/
+}
+
+
+.box-2{
+	border: 3px dotted grey;
+	padding: 20px;
+	margin: 20px;
+}
+
+
+.categories{
+	border: 1px grey solid;
+	border-radius: 15px; /*Makes the border have curved edges*/
+	padding: 10px;
+	margin: 10px;
+
+}
+
+.categories h2{
+	text-align: center; /*This centres the h2 tag in the class categories*/
+}
+
+.categories ul{
+	padding: 0;
+	list-style: ; /* List styles - square, circle, disc*/ 
+	list-style: none; /*This gets rid of he list style*/
+	padding-left: 60px;
+
+}
+
+
+.categories li{
+	list-style-image: url("tick1.jpg");
+	padding-bottom: 6px;
+	border-bottom: 1px dotted grey;
+}
+
+
+.my-form{
+	border: 1px solid grey;
+	border-radius: 15px;
+	padding: 20px;
+	margin: 20px;
+}
+
+.my-form .form-group{
+	padding-bottom: 25px;
+}
+
+
+.my-form label{
+	font-weight: bold;
+	display: block; /*This displays all the labels in a column form*/
+	margin-bottom: 5px;
+}
+
+.my-form input[type = "text"], .my-form textarea{  /*This targets input with type text*/
+	padding: 8px;
+	margin-right: 5px;
+	width: 90%;
+	border-radius: 7px;
+}
+
+
+.block{
+	border: 1px solid grey;
+	float: left; /*This will move it to the left*/
+	width: 33.3%;
+	padding: 10px;
+	box-sizing: border-box; /* This makes the padding, border and width to fit perfectly and evenly*/
+
+}
+
+.block h3{
+	text-decoration: underline;
+	color: brown;
+	font-style: italic;
+
+}
+
+
+#main-block{
+	float: left;
+	width: 65%;
+	padding: 15px;
+	background-color: burlywood;
+	box-sizing: border-box;
+}
+
+
+
+#sidebar{
+	float: right;
+	width: 33%;
+	background-color: grey;
+	color: white;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+
+.p-box{
+	border: 5px dashed #d7ded9;
+	height: 500px;
+	width: 800px;
+	margin-top: 30px;
+	position: relative; /*makes positioning relative to this class*/
+	background-image: url("river.jpg");
+	background-position: 100px 200px; /*This positions the image 100px upwards and downwards and 200px sidewards*/
+	background-position: center top;
+	background-repeat: no-repeat; /*This makes the image not to repeat*/
+
+
+}
+
+
+.p-box h1{
+	position: absolute; 
+	top: -5px;
+	word-spacing: 0.5em;
+
+}
+
+
+.p-box h2{
+	position: absolute;
+	right: 40px;
+	word-spacing: 1em;
+}
+
+.fix-me{
+	font: bold 20px Verdana ;
+	color: blue;
+	position: fixed; /*This stations the element fixed in that osition irrespective of where you scroll to*/
+	top: 140px;
+	left: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
